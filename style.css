@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -59,14 +61,15 @@ header {
 
 .login {
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   max-width: 500px;
-  padding: clamp(35px, 8%, 70px);
+  padding: clamp(35px, 3%, 70px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+
 }
 
 
@@ -88,6 +91,7 @@ header {
   color: var(--deep-grey);
   font-size: 1.5rem;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .login__label {
@@ -278,7 +282,6 @@ header {
   flex: 1;
 }
 
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -297,6 +300,8 @@ header {
   font-weight: 800;
 
 
+
+
 }
 
 .footer a {
@@ -307,7 +312,12 @@ header {
 }
 
 .copyright {
-  display: block;
+  font-size: 9px;
+  
+}
+.copy {
+  list-style: none;
+
 }
 
 
@@ -316,3 +326,32 @@ header {
     margin: 0 auto;
   }
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 10px;
+}
+
+
+
+.language-box {
+  cursor: pointer;
+  background-color: #7492BA;
+  border-radius: 4px;
+  opacity: 0.9;
+  background-image: url('/images//globo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.language-box:hover {
+  background-color: var(--red);
+}
+
