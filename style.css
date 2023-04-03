@@ -334,24 +334,10 @@ header {
   color: #fff;
   display: flex;
   justify-content: flex-start;
-
   padding: 10px;
 }
 
 
 
-.language-box {
-  cursor: pointer;
-  background-color: #7492BA;
-  border-radius: 4px;
-  opacity: 0.9;
-  background-image: url('/images//globo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-}
 
-.language-box:hover {
-  background-color: var(--red);
-}
 
