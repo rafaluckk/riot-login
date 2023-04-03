@@ -26,16 +26,9 @@ body {
   --red: #cf3c3f;
 }
 
-main {
-  display: flex;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+
+
 
 .logo {
   position: fixed;
@@ -279,17 +272,9 @@ header {
   background-image: url("./images/arcane-jinx-vi-lol-chamber-valorant-4k-wallpaper-3840x2160.jpg");
   background-size: cover;
   background-position: center;
-  flex: 1;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
   margin-bottom: 30px;
 }
 
@@ -298,34 +283,18 @@ header {
   font-size: 11px;
   list-style: none;
   font-weight: 800;
-
-
-
-
 }
 
 .footer a {
   color: rgba(249, 249, 249, 0.65);
   text-decoration: none;
   margin: 0 10px;
-  
 }
 
 .copyright {
   font-size: 9px;
-  
-}
-.copy {
-  list-style: none;
-
 }
 
-
-@media (max-width: 960px) {
-  .logo {
-    margin: 0 auto;
-  }
-}
 
 .footer {
   position: fixed;
