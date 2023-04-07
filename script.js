@@ -1,5 +1,27 @@
 const inputs = document.querySelectorAll("input");
 const button = document.querySelector('.login__button');
+const form = document.querySelector('form');
+const username = document.querySelector('input[name="username"]');
+const password = document.querySelector('input[name="password"]');
+const submitBtn = document.querySelector('.login__button');
+
+function validateForm() {
+  if (username.value === '' || password.value === '') {
+    alert('Por favor, preencha todos os campos.');
+    return false;
+  }
+  
+  return true;
+}
+
+submitBtn.addEventListener('click', function() {
+  if (validateForm()) {
+    alert('Formulário enviado com sucesso!');
+    form.submit();
+  }
+});
+
+
 
 
 
@@ -28,3 +50,7 @@ const handleChange = () => {
 inputs.forEach((input) => input.addEventListener("focus", handleFocus));
 inputs.forEach((input) => input.addEventListener("focusout", handleFocusOut));
 inputs.forEach((input) => input.addEventListener("input", handleChange));
+
+
+
+
